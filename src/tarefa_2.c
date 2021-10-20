@@ -3,9 +3,11 @@
 #define SOME_NUMBER 10
 
 int tarefa_2(int num) {
-    // TODO desenvolva aqui seu código
-    return -1;
-    // TODO desenvolva aqui seu código
+    int resultado = 1;
+    for(int i = 1; i <= num; i++) {
+        resultado = resultado * i;
+    }
+    return resultado;
 }
 
 /**

@@ -3,9 +3,25 @@
 #define SOME_NUMBER 21
 
 int tarefa_1(int n) {
-    // TODO desenvolva aqui seu código
-    return -1;
-    // TODO desenvolva aqui seu código
+    if(n < 1) {
+        return -1;
+    }
+    if(n == 1) {
+        return 1;
+    }
+    if(n == 2) {
+        return 1;
+    }
+    int penultimo = 1;  // primeiro
+    int ultimo = 1;  // segundo
+
+    int proximo = 0;
+    for(int i = 3; i <= n; i++) {
+        proximo = penultimo + ultimo;
+        penultimo = ultimo; // penúltimo atual é o último antigo
+        ultimo = proximo;  // o novo último é o próximo número, recém computado
+    }
+    return ultimo;
 }
 
 /**

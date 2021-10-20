@@ -4,9 +4,12 @@
 #define N_POS 10
 
 void tarefa_4(int a, int b, int *vec) {
-    // TODO desenvolva aqui seu código
-    return;
-    // TODO desenvolva aqui seu código
+    int x = 1;
+    // i é o contador da posição do vetor
+    for(int i = 0; i < 10; i++) {
+        vec[i] = a * x + b;
+        x = x + 1;  // atualiza o valor do x a cada iteração
+    }
 }
 
 /**

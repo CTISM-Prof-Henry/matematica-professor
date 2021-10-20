@@ -7,9 +7,26 @@
 #define N_START_VALUE 4
 
 int tarefa_2(int n, int p) {
-    // TODO desenvolva aqui seu código
-    return -1;
-    // TODO desenvolva aqui seu código
+    if(p > n) {
+        return 0;
+    }
+    if(p == 0) {
+        return 0;
+    }
+
+    // código para calcular o numerador da fórmula de arranjo
+    int numerador = 1;
+    for(int i = 1; i <= n; i++) {
+        numerador = numerador * i;
+    }
+    // código para calcular o denominador da fórmula de arranjo
+    int denominador = 1;
+    for(int i = 1; i <= (n - p); i++) {
+        denominador = denominador * i;
+    }
+
+    int resultado = numerador/denominador;
+    return resultado;
 }
 
 /**

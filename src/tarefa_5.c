@@ -4,9 +4,11 @@
 #define START_CHAR 97
 
 char tarefa_5(int n) {
-    // TODO desenvolva aqui seu código
-    return 'a';
-    // TODO desenvolva aqui seu código
+    char alfabeto [26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q','r', 's',
+                          't', 'u', 'v', 'w','x', 'y', 'z'};
+    return alfabeto[n];
+    // também funciona se fizer
+    // return 97 + n;
 }
 
 /**
